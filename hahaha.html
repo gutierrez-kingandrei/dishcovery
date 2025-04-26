@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DishCovery Categories</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('images/brickwall.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .category-img {
+      width: 250px;
+      height: auto;
+      cursor: pointer;
+      transition: box-shadow 0.3s ease;
+      border-radius: 15px;
+    }
+
+    .category-img:hover {
+      box-shadow: 0 0 25px 10px rgb(203, 145, 0);
+    }
+  </style>
 </head>
 <body>
-  <h1> HAAAAAAAAAAAAAAAAAAAAAA</h1>
-  <h2> HAKDOG</h2>
-  <h4> hahahahah</h4>
+  <div class="container">
+    <!-- RECIPE -->
+    <img
+      src="images\recipeboard.png"
+      alt="Recipe"
+      class="category-img"
+      onclick="location.href='listofgames.html?category=home'"
+    />
+
+    <!-- CAN'T DECIDE -->
+    <img
+      src="randomboard.png"
+      alt="Can't Decide"
+      class="category-img"
+      onclick="location.href='random.html'"
+    />
+
+    <!-- RESTO -->
+    <img
+      src="images\restoboard.png"
+      alt="Resto"
+      class="category-img"
+      onclick="location.href='listofgames.html?category=resto'"
+    />
+  </div>
 </body>
 </html>
